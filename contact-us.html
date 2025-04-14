@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-custom nav-bar-light"
+        id="navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/icons/index-navbar-main-logo.svg"
+              alt=""
+              class="img-fluid main-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <a
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample1"
+              role="button"
+              aria-controls="offcanvasExample1"
+              ><span class="navbar-toggler-icon"></span
+            ></a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thanda Shanda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">D-Rage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a
+                class="nav-link rounded-outlined-btn book-table-btn"
+                data-bs-toggle="offcanvas"
+                href="#enquiry"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><img
+                  src="assets/icons/index-navbar-icons-chat.svg"
+                  alt=""
+                  class="img-fluid chat-icon"
+              /></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="offcanvas enquiry-custom-side-bar offcanvas-end"
+      tabindex="-1"
+      id="enquiry"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header d-flex">
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+        <button
+          type="button"
+          class="btn text-reset ms-auto"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="main-book-box heading-content">
+          <h1>Enquiry Now</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            a unde laborum eveniet velit eaque vel adipisci illum omnis
+            consectetur sed.
+          </p>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Phone No."
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Mail"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Occasion"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="custom-datetime">
+                <!-- <i class="fas fa-calendar-alt icon" onclick="openDateTimePicker()"></i>-->
+                <img
+                  src="assets/icons/index-book-ticket-calender-icon.svg"
+                  alt=""
+                  class="img-fluid icon"
+                  onclick="openDateTimePicker()"
+                />
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="customDatetime"
+                  placeholder="Date & Time"
+                />
+              </div>
+
+              <!-- <input type="datetime-local" class="form-control" id="inputEmail4" placeholder="Date & Time"> -->
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="No. Of People"
+              />
+            </div>
+
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Drop a Message"
+              />
+            </div>
+
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn rounded-outlined-btn side-open-menu"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-end menu-right-side"
+      tabindex="-1"
+      id="offcanvasExample1"
+      aria-labelledby="offcanvasExampleLabel1"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="header-side-bar">
+          <ul class="list-group header-slider-right">
+            <li class="active">
+              <a href="">About Us</a>
+            </li>
+            <li><a href="">Thanda Shanda</a></li>
+            <li><a href="">D-Rage</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a
+                class="nav-link rounded-outlined-btn book-table-btn"
+                data-bs-toggle="offcanvas"
+                href="#enquiry"
+                role="button"
+                aria-controls="offcanvasExample"
+                >Enquiry Now</a
+              >
+            </li>
+            <!-- <li>
+              <a href="contact-us.html" class="submit-btn"> Contact Us </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-us-custom" id="contact-us">
+      <div class="container-fluid h-100">
+        <div class="row align-items-end h-100">
+          <div class="col-md-6">
+            <div class="contact-us-box heading-content">
+              <h1>Contact Us</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incidiet dolore magna aliqua. facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-in-touch-section section-padding-all" id="get-in-touch">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-6 pe-md-5 mb-md-0 mb-4">
+            <div class="get-in-touch-contact-box">
+              <h4>Thanda Shanda</h4>
+              <ul class="office-ul-box get-in-touch-ul-box">
+                <li>
+                  <a href="#"
+                    ><span
+                      ><img src="assets/icons/contact-us-icon-phone.svg" alt=""
+                    /></span>
+                    <p class="ms-0">+91 999 999 9999</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><img src="assets/icons/contact-us-icon-mail.svg" alt=""
+                    /></span>
+                    <p>dummy@gmail.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    ><span
+                      ><img src="assets/icons/contact-us-icon-add.svg" alt=""
+                    /></span>
+                    <p class="ms-0">
+                      66, Second Floor, Janpath, Connaught Place, New Delhi
+                      110001
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <h4>Query For Marketing</h4>
+              <ul class="marketing-ul-box get-in-touch-ul-box">
+                <li>
+                  <a href="#"
+                    ><span
+                      ><img src="assets/icons/contact-us-icon-phone.svg" alt=""
+                    /></span>
+                    <p>+91 999 999 9999</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><img src="assets/icons/contact-us-icon-mail.svg" alt=""
+                    /></span>
+                    <p>dummy@gmail.com</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 ps-md-4">
+            <div class="get-in-touch-form-container text-center">
+              <div class="get-in-touch-form-heading px-md-5 text-center">
+                <h2>Get in touch</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusdolore magna aliqua.
+                </p>
+              </div>
+              <div class="custom-form-box">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name*"
+                    aria-label=""
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email ID*"
+                    aria-label=""
+                    aria-describedby="Email Address"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Mobile No.*"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <textarea
+                    type="text"
+                    rows="5"
+                    class="form-control"
+                    placeholder="Message"
+                    aria-label="Mobile No."
+                    aria-describedby=""
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="get-in-touch-btn-box mt-4">
+                <button type="submit" class="get-in-touch-btn btn">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+            <!-- <div class=""></div> -->
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <footer class="footer-custom section-padding-all" id="footer">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="footer-logo-container">
+              <div class="logo-ani-line-box">
+                <img
+                  src="assets/vidoes/index-footer-logo-vid.gif"
+                  alt=""
+                  class="img-fluid footer-logo"
+                />
+              </div>
+              <div class="logo-ani-img-box">
+                <div class="col-md-6">
+                  <div class="logo-two-img">
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="logo-two-img logo-two-img-2">
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <!-- <img src="assets/icons/index-thanda-shanda-icon-next.svg" alt="">
+                              <img src="assets/icons/index-thanda-shanda-icon-prev.svg" alt=""> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="footer-nav-container">
+              <div class="footer-nav-box">
+                <a href="index.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Products</a>
+                <a href="#">Testimonials</a>
+                <a href="contact-us.html">Contact Us</a>
+              </div>
+              <div class="footer-copyright-box">
+                <p>Copyright Supora 2025 All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/controller.js"></script>
+  </body>
+</html>

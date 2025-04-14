@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sipora</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-custom nav-bar-light"
+        id="navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/icons/index-navbar-main-logo.svg"
+              alt=""
+              class="img-fluid main-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <a
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample1"
+              role="button"
+              aria-controls="offcanvasExample1"
+              ><span class="navbar-toggler-icon"></span
+            ></a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thanda Shanda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">D-Rage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a
+                class="nav-link rounded-outlined-btn book-table-btn"
+                data-bs-toggle="offcanvas"
+                href="#enquiry"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><img
+                  src="assets/icons/index-navbar-icons-chat.svg"
+                  alt=""
+                  class="img-fluid chat-icon"
+              /></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="offcanvas enquiry-custom-side-bar offcanvas-end"
+      tabindex="-1"
+      id="enquiry"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header d-flex">
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+        <button
+          type="button"
+          class="btn text-reset ms-auto"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="main-book-box heading-content">
+          <h1>Enquiry Now</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            a unde laborum eveniet velit eaque vel adipisci illum omnis
+            consectetur sed.
+          </p>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Phone No."
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Mail"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Occasion"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="custom-datetime">
+                <!-- <i class="fas fa-calendar-alt icon" onclick="openDateTimePicker()"></i>-->
+                <img
+                  src="assets/icons/index-book-ticket-calender-icon.svg"
+                  alt=""
+                  class="img-fluid icon"
+                  onclick="openDateTimePicker()"
+                />
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="customDatetime"
+                  placeholder="Date & Time"
+                />
+              </div>
+
+              <!-- <input type="datetime-local" class="form-control" id="inputEmail4" placeholder="Date & Time"> -->
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="No. Of People"
+              />
+            </div>
+
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Drop a Message"
+              />
+            </div>
+
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn rounded-outlined-btn side-open-menu"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-end menu-right-side"
+      tabindex="-1"
+      id="offcanvasExample1"
+      aria-labelledby="offcanvasExampleLabel1"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="header-side-bar">
+          <ul class="list-group header-slider-right">
+            <li class="active">
+              <a href="">About Us</a>
+            </li>
+            <li><a href="">Thanda Shanda</a></li>
+            <li><a href="">D-Rage</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a
+                class="nav-link rounded-outlined-btn book-table-btn"
+                data-bs-toggle="offcanvas"
+                href="#enquiry"
+                role="button"
+                aria-controls="offcanvasExample"
+                >Enquiry Now</a
+              >
+            </li>
+            <!-- <li>
+              <a href="contact-us.html" class="submit-btn"> Contact Us </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="refresh-custom" id="refresh">
+      <div class="col-md-6">
+        <div
+          class="refresh-heading-box"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <!-- <h1>Refreshing Traditions, Energizing Futures</h1> -->
+          <img
+            src="assets/images/index-refresh-text.svg"
+            alt=""
+            class="ing-fluid"
+          />
+        </div>
+      </div>
+      <div class="refresh-bg-img-slider-box">
+        <div class="refresh-bg-img-slider owl-carousel owl-theme">
+          <div class="item" data-dot="<button><span>01</span></button>">
+            <div class="refresh-img-box">
+              <img
+                src="assets/images/index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-desktop"
+              />
+              <img
+                src="assets/images/res-index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-phone"
+              />
+            </div>
+          </div>
+          <div class="item" data-dot="<button><span>02</span></button>">
+            <div class="refresh-img-box">
+              <img
+                src="assets/images/index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-desktop"
+              />
+              <img
+                src="assets/images/res-index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-phone"
+              />
+            </div>
+          </div>
+          <div class="item" data-dot="<button><span>03</span></button>">
+            <div class="refresh-img-box">
+              <img
+                src="assets/images/index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-desktop"
+              />
+              <img
+                src="assets/images/res-index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-phone"
+              />
+            </div>
+          </div>
+          <div class="item" data-dot="<button><span>04</span></button>">
+            <div class="refresh-img-box">
+              <img
+                src="assets/images/index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-desktop"
+              />
+              <img
+                src="assets/images/res-index-main-slider-img.jpg"
+                alt=""
+                class="img-fluid for-phone"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="at-sipora-custom section-padding-all" id="at-shipora">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <div
+              class="at-sipora-content"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <p>
+                At <span>Sipora</span>, we blend
+                <span>classic flavors</span> with a modern twist to create
+                <span>refreshing</span> and energizing beverages. Our goal is to
+                offer drinks that not only satisfy your thirst but also bring
+                together tradition and <span>innovation</span> in every sip.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-quality-custom section-padding-all" id="quality">
+      <div class="container-fluid">
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-md-3 col-6">
+            <div class="quality-box">
+              <div class="quality-img">
+                <img
+                  src="assets/icons/index-icon-quality.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="quatlity-content">
+                <h4>Quality</h4>
+                <p>
+                  100% premium ingredients ensure exceptional taste and safety.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="quality-box">
+              <div class="quality-img">
+                <img
+                  src="assets/icons/index-icon-quality.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="quatlity-content">
+                <h4>Innovation</h4>
+                <p>Blending traditional flavors with modern twists.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="quality-box">
+              <div class="quality-img">
+                <img
+                  src="assets/icons/index-icon-quality.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="quatlity-content">
+                <h4>Tradition</h4>
+                <p>Preserving authentic recipes in every beverage.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="quality-box">
+              <div class="quality-img">
+                <img
+                  src="assets/icons/index-icon-quality.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="quatlity-content">
+                <h4>Satisfaction</h4>
+                <p>Exceeding customer expectations with quality drinks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sipora-can-custom" id="sipora-can">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="thanda-shanda-slider-box p-0">
+            <div class="thanda-shanda-slider owl-carousel owl-theme">
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div
+                    class="thanda-shanda-text-box"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <h2>Thanda Shanda</h2>
+                    <h1>Masala Zeera</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-thanda-shanda-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/res-index-thanda-shanda-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="item" data-dot="<button><span>02</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Masala Zeera</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-thanda-shanda-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/res-index-thanda-shanda-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="thanda-shanda-slider-box p-0">
+            <div class="thanda-shanda-slider owl-carousel owl-theme">
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box d-rage-custom-box">
+                  <div
+                    class="thanda-shanda-text-box d-rage-text-box"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <h2>D-Rage</h2>
+                    <h1>Classic</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-d-rage-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/res-index-d-rage-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box d-rage-custom-box">
+                  <div class="thanda-shanda-text-box d-rage-text-box">
+                    <h2>D-Rage</h2>
+                    <h1>Classic</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-d-rage-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/res-index-d-rage-bg-img.jpg"
+                      alt=""
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="three-sipora-custom" id="three-sipora">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div
+              class="three-sipora-content heading-content"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1>Lorem ipsum dolor sit amet, vel facilisis.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="three-sipora-bg-img p-0">
+            <img
+              src="assets/images/index-three-sipora-bg-img.jpg"
+              alt=""
+              class="img-fluid for-desktop"
+            />
+            <img
+              src="assets/images/res-index-three-sipora-bg-img.jpg"
+              alt=""
+              class="img-fluid for-phone"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-custom section-padding-all" id="form">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="form-content heading-content"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1>Lorem ipsum dolor sit amen.</h1>
+              <p class="form-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="mail-phone">
+                <a href="#">
+                  <span
+                    ><img
+                      src="assets/icons/index-form-icon-mail.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></span>
+                  mkt@siporabeverages.com
+                </a>
+                <a href="#">
+                  <span
+                    ><img
+                      src="assets/icons/index-form-icon-phone.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></span>
+                  +91 999 999 9999
+                </a>
+              </div>
+              <a href="#">
+                <span class="form-add-spaces"
+                  ><img
+                    src="assets/icons/index-form-icon-add.svg"
+                    alt=""
+                    class="img-fluid"
+                /></span>
+                66, Second Floor, Janpath, Connaught Place, New Delhi, Delhi
+                110001
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-container">
+              <form class="row g-3">
+                <h1>
+                  Lorem ipsum <br />
+                  amen
+                </h1>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword4"
+                    placeholder="Phone No."
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword4"
+                    placeholder="Message"
+                  />
+                </div>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="submit" class="btn form-btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-custom section-padding-all" id="footer">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="footer-logo-container">
+              <div class="logo-ani-line-box">
+                <img
+                  src="assets/vidoes/index-footer-logo-vid.gif"
+                  alt=""
+                  class="img-fluid footer-logo"
+                />
+              </div>
+              <div class="logo-ani-img-box">
+                <div class="col-md-6">
+                  <div class="logo-two-img">
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="logo-two-img logo-two-img-2">
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <!-- <img src="assets/icons/index-thanda-shanda-icon-next.svg" alt="">
+                            <img src="assets/icons/index-thanda-shanda-icon-prev.svg" alt=""> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="footer-nav-container">
+              <div class="footer-nav-box">
+                <a href="index.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Products</a>
+                <a href="#">Testimonials</a>
+                <a href="contact-us.html">Contact Us</a>
+              </div>
+              <div class="footer-copyright-box">
+                <p>Copyright Supora 2025 All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/controller.js"></script>
+  </body>
+</html>
