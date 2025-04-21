@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sipora</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icons/index-navbar-main-logo.svg"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -28,7 +33,7 @@
           <a class="navbar-brand" href="index.html"
             ><img
               src="assets/icons/index-navbar-main-logo.svg"
-              alt=""
+              loading="lazy"
               class="img-fluid main-logo"
           /></a>
           <button
@@ -51,13 +56,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Us</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html#about-us"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Thanda Shanda</a>
+                <a class="nav-link" href="index.html#thanda-shanda"
+                  >Thanda Shanda</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">D-Rage</a>
+                <a class="nav-link" href="index.html#d-rage">D-Rage</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -72,7 +84,7 @@
                 aria-controls="offcanvasExample"
                 ><img
                   src="assets/icons/index-navbar-icons-chat.svg"
-                  alt=""
+                  loading="lazy"
                   class="img-fluid chat-icon"
               /></a>
             </form>
@@ -130,48 +142,13 @@
                 placeholder="Mail"
               />
             </div>
-            <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder="Occasion"
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="custom-datetime">
-                <!-- <i class="fas fa-calendar-alt icon" onclick="openDateTimePicker()"></i>-->
-                <img
-                  src="assets/icons/index-book-ticket-calender-icon.svg"
-                  alt=""
-                  class="img-fluid icon"
-                  onclick="openDateTimePicker()"
-                />
-                <input
-                  type="datetime-local"
-                  class="form-control"
-                  id="customDatetime"
-                  placeholder="Date & Time"
-                />
-              </div>
 
-              <!-- <input type="datetime-local" class="form-control" id="inputEmail4" placeholder="Date & Time"> -->
-            </div>
             <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder="No. Of People"
-              />
-            </div>
-
-            <div class="col-12">
               <input
                 type="text"
                 class="form-control"
                 id="inputAddress"
-                placeholder="Drop a Message"
+                placeholder="Message"
               />
             </div>
 
@@ -205,11 +182,16 @@
       <div class="offcanvas-body">
         <div class="header-side-bar">
           <ul class="list-group header-slider-right">
-            <li class="active">
-              <a href="">About Us</a>
+            <li class="active" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a href="index.html#about-us">About Us</a>
             </li>
-            <li><a href="">Thanda Shanda</a></li>
-            <li><a href="">D-Rage</a></li>
+            <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <a href="index.html#thanda_shanda">Thanda Shanda</a>
+            </li>
+            <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <a href="index.html#d_rage">D-Rage</a>
+            </li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li>
               <a
@@ -230,86 +212,99 @@
     </div>
 
     <section class="refresh-custom" id="refresh">
-      <div class="col-md-6">
-        <div
-          class="refresh-heading-box"
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <!-- <h1>Refreshing Traditions, Energizing Futures</h1> -->
-          <img
-            src="assets/images/index-refresh-text.svg"
-            alt=""
-            class="ing-fluid"
-          />
-        </div>
-      </div>
-      <div class="refresh-bg-img-slider-box">
-        <div class="refresh-bg-img-slider owl-carousel owl-theme">
-          <div class="item" data-dot="<button><span>01</span></button>">
-            <div class="refresh-img-box">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="refresh-heading-box"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- <h1>Refreshing Traditions, Energizing Futures</h1> -->
               <img
-                src="assets/images/index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-desktop"
+                src="assets/images/index-refresh-text.svg"
+                loading="lazy"
+                class="ing-fluid for-desktop"
               />
               <img
-                src="assets/images/res-index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-phone"
+                src="assets/images/index-res-refresh-text.svg"
+                loading="lazy"
+                class="ing-fluid for-phone"
               />
             </div>
           </div>
-          <div class="item" data-dot="<button><span>02</span></button>">
-            <div class="refresh-img-box">
-              <img
-                src="assets/images/index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-desktop"
-              />
-              <img
-                src="assets/images/res-index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-phone"
-              />
-            </div>
-          </div>
-          <div class="item" data-dot="<button><span>03</span></button>">
-            <div class="refresh-img-box">
-              <img
-                src="assets/images/index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-desktop"
-              />
-              <img
-                src="assets/images/res-index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-phone"
-              />
-            </div>
-          </div>
-          <div class="item" data-dot="<button><span>04</span></button>">
-            <div class="refresh-img-box">
-              <img
-                src="assets/images/index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-desktop"
-              />
-              <img
-                src="assets/images/res-index-main-slider-img.jpg"
-                alt=""
-                class="img-fluid for-phone"
-              />
+          <div class="col-lg-6">
+            <div class="refresh-bg-img-slider-box">
+              <div class="refresh-bg-img-slider owl-carousel owl-theme">
+                <div class="item" data-dot="<button><span>01</span></button>">
+                  <div class="refresh-img-box">
+                    <img
+                      src="assets/images/index-main-slider-thanda-shanda-img.png"
+                      loading="lazy"
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/index-res-main-slider-thanda-shanda-img.png"
+                      loading="lazy"
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+
+                <div class="item" data-dot="<button><span>02</span></button>">
+                  <div class="refresh-img-box">
+                    <img
+                      src="assets/images/index-main-slider-img.png"
+                      loading="lazy"
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/res-index-main-slider-img.png"
+                      loading="lazy"
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+
+                <!-- <div class="item" data-dot="<button><span>03</span></button>">
+                      <div class="refresh-img-box">
+                        <img
+                          src="assets/images/index-main-slider-energy-drink-img.jpg"
+                          loading="lazy"
+                          class="img-fluid for-desktop"
+                        />
+                        <img
+                          src="assets/images/res-index-main-slider-img.jpg"
+                          loading="lazy"
+                          class="img-fluid for-phone"
+                        />
+                      </div>
+                    </div> -->
+                <!-- <div class="item" data-dot="<button><span>04</span></button>">
+                      <div class="refresh-img-box">
+                        <img
+                          src="assets/images/index-main-slider-img.jpg"
+                          loading="lazy"
+                          class="img-fluid for-desktop"
+                        />
+                        <img
+                          src="assets/images/res-index-main-slider-img.jpg"
+                          loading="lazy"
+                          class="img-fluid for-phone"
+                        />
+                      </div>
+                    </div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="at-sipora-custom section-padding-all" id="at-shipora">
+    <section class="at-sipora-custom section-padding-all" id="about-us">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-md-9">
@@ -348,8 +343,8 @@
             <div class="quality-box">
               <div class="quality-img">
                 <img
-                  src="assets/icons/index-icon-quality.png"
-                  alt=""
+                  src="assets/icons/index-icon-quality.gif"
+                  loading="lazy"
                   class="img-fluid"
                 />
               </div>
@@ -365,8 +360,8 @@
             <div class="quality-box">
               <div class="quality-img">
                 <img
-                  src="assets/icons/index-icon-quality.png"
-                  alt=""
+                  src="assets/icons/index-icon-innovation.gif"
+                  loading="lazy"
                   class="img-fluid"
                 />
               </div>
@@ -380,8 +375,8 @@
             <div class="quality-box">
               <div class="quality-img">
                 <img
-                  src="assets/icons/index-icon-quality.png"
-                  alt=""
+                  src="assets/icons/index-icon-tradition.gif"
+                  loading="lazy"
                   class="img-fluid"
                 />
               </div>
@@ -395,8 +390,8 @@
             <div class="quality-box">
               <div class="quality-img">
                 <img
-                  src="assets/icons/index-icon-quality.png"
-                  alt=""
+                  src="assets/icons/index-icon-satisfaction.gif"
+                  loading="lazy"
                   class="img-fluid"
                 />
               </div>
@@ -410,12 +405,12 @@
       </div>
     </section>
 
-    <section class="sipora-can-custom" id="sipora-can">
+    <section class="sipora-can-custom for-desktop" id="sipora-can">
       <div class="container-fluid">
         <div class="row">
-          <div class="thanda-shanda-slider-box p-0">
+          <div class="thanda-shanda-slider-box p-0" id="thanda-shanda">
             <div class="thanda-shanda-slider owl-carousel owl-theme">
-              <div class="item" data-dot="<button><span>01</span></button>">
+              <!-- <div class="item" data-dot="<button><span>01</span></button>">
                 <div class="thanda-shanda-custom-box">
                   <div
                     class="thanda-shanda-text-box"
@@ -437,13 +432,48 @@
                   <div class="thanda-shanda-img-box">
                     <img
                       src="assets/images/index-thanda-shanda-bg-img.jpg"
-                      alt=""
+                      loading="lazy"
+                      class="img-fluid for-desktop"
+                    /> 
+                    <img
+                      src="assets/images/res-index-thanda-shanda-bg-img.jpg"
+                      loading="lazy"
+                      class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Lemon Chaska</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-thanda-shanda-bg-img2.jpg"
+                      loading="lazy"
                       class="img-fluid for-desktop"
                     />
                     <img
-                      src="assets/images/res-index-thanda-shanda-bg-img.jpg"
-                      alt=""
-                      class="img-fluid for-phone"
+                      src="assets/images/index-res-thanda-shanda-bg-img2.png"
+                      loading="lazy"
+                      class="img-fluid for-phone thanda-shanda-png-img"
                     />
                   </div>
                 </div>
@@ -454,24 +484,66 @@
                   <div class="thanda-shanda-text-box">
                     <h2>Thanda Shanda</h2>
 
-                    <h1>Masala Zeera</h1>
+                    <h1>Masala Shikanji</h1>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore
                       mgravida. Rverra maecenas accumsan lacus vel facilisis.
                     </p>
-                    <a href="#">Read More</a>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
                   </div>
                   <div class="thanda-shanda-img-box">
                     <img
-                      src="assets/images/index-thanda-shanda-bg-img.jpg"
-                      alt=""
+                      src="assets/images/index-thanda-shanda-bg-img3.jpg"
+                      loading="lazy"
                       class="img-fluid for-desktop"
                     />
                     <img
-                      src="assets/images/res-index-thanda-shanda-bg-img.jpg"
-                      alt=""
-                      class="img-fluid for-phone"
+                      src="assets/images/index-res-thanda-shanda-bg-img3.png"
+                      loading="lazy"
+                      class="img-fluid for-phone thanda-shanda-png-img"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="item" data-dot="<button><span>03</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Zeera Tadka</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-thanda-shanda-bg-img4.jpg"
+                      loading="lazy"
+                      class="img-fluid for-desktop"
+                    />
+                    <img
+                      src="assets/images/index-res-thanda-shanda-bg-img4.png"
+                      loading="lazy"
+                      class="img-fluid for-phone thanda-shanda-png-img"
                     />
                   </div>
                 </div>
@@ -481,9 +553,10 @@
         </div>
 
         <div class="row">
-          <div class="thanda-shanda-slider-box p-0">
-            <div class="thanda-shanda-slider owl-carousel owl-theme">
-              <div class="item" data-dot="<button><span>01</span></button>">
+          <div class="thanda-shanda-slider-box p-0" id="d-rage">
+            <!-- if we want to same work as a thanda shand work with custom next and prev button just put class with attribute in below div. -->
+            <div class="">
+              <!-- <div class="item" data-dot="<button><span>01</span></button>">
                 <div class="thanda-shanda-custom-box d-rage-custom-box">
                   <div
                     class="thanda-shanda-text-box d-rage-text-box"
@@ -505,21 +578,174 @@
                   <div class="thanda-shanda-img-box">
                     <img
                       src="assets/images/index-d-rage-bg-img.jpg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid for-desktop"
                     />
                     <img
                       src="assets/images/res-index-d-rage-bg-img.jpg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box d-rage-custom-box">
+                  <div class="thanda-shanda-text-box d-rage-text-box">
+                    <h2>D-Rage</h2>
+                    <h1>Energy Drink</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-d-rage-bg-img2.jpg"
+                      loading="lazy"
+                      class="img-fluid for-desktop"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="sipora-can-custom for-phone res-sipora-can-custom"
+      id="sipora-can"
+    >
+      <div class="container-fluid">
+        <div class="row res-thanda-shanda-slider-first section-padding-all">
+          <div
+            class="thanda-shanda-slider-box p-0"
+            id="thanda_shanda"
+            style="padding-top: 100px; margin-top: 2px"
+          >
+            <div
+              class="thanda-shanda-slider thanda-shanda-res-slider-btn-color owl-carousel owl-theme"
+            >
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="res-thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Lemon Chaska</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-res-thanda-shanda-bg-img2.png"
+                      loading="lazy"
+                      class="img-fluid thanda-shanda-png-img"
                     />
                   </div>
                 </div>
               </div>
 
-              <div class="item" data-dot="<button><span>01</span></button>">
+              <div class="item" data-dot="<button><span>02</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="res-thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Masala Shikanji</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-res-thanda-shanda-bg-img3.png"
+                      loading="lazy"
+                      class="img-fluid thanda-shanda-png-img"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="item" data-dot="<button><span>03</span></button>">
+                <div class="thanda-shanda-custom-box">
+                  <div class="res-thanda-shanda-text-box">
+                    <h2>Thanda Shanda</h2>
+
+                    <h1>Zeera Tadka</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-res-thanda-shanda-bg-img4.png"
+                      loading="lazy"
+                      class="img-fluid thanda-shanda-png-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row res-thanda-shanda-slider-second section-padding-all">
+          <div class="thanda-shanda-slider-box p-0" id="d_rage">
+            <div
+              class="thanda-shanda-slider thanda-shanda-res-slider-btn-color owl-carousel owl-theme"
+            >
+              <!-- <div class="item" data-dot="<button><span>01</span></button>">
                 <div class="thanda-shanda-custom-box d-rage-custom-box">
-                  <div class="thanda-shanda-text-box d-rage-text-box">
+                  <div
+                    class="thanda-shanda-text-box d-rage-text-box"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <h2>D-Rage</h2>
                     <h1>Classic</h1>
                     <p>
@@ -532,13 +758,49 @@
                   <div class="thanda-shanda-img-box">
                     <img
                       src="assets/images/index-d-rage-bg-img.jpg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid for-desktop"
                     />
                     <img
                       src="assets/images/res-index-d-rage-bg-img.jpg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid for-phone"
+                    />
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="item" data-dot="<button><span>01</span></button>">
+                <div class="thanda-shanda-custom-box d-rage-custom-box">
+                  <div
+                    class="res-thanda-shanda-text-box"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <h2>D-Rage</h2>
+                    <h1>Energy Drink</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      mgravida. Rverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <a
+                      data-bs-toggle="offcanvas"
+                      href="#enquiry"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      class="thanda-shanda-enq-btn"
+                      >Enquiry Now</a
+                    >
+                  </div>
+                  <div class="thanda-shanda-img-box">
+                    <img
+                      src="assets/images/index-res-d-rage-bg-img2.png"
+                      loading="lazy"
+                      class="img-fluid thanda-shanda-png-img"
                     />
                   </div>
                 </div>
@@ -574,12 +836,12 @@
           <div class="three-sipora-bg-img p-0">
             <img
               src="assets/images/index-three-sipora-bg-img.jpg"
-              alt=""
+              loading="lazy"
               class="img-fluid for-desktop"
             />
             <img
               src="assets/images/res-index-three-sipora-bg-img.jpg"
-              alt=""
+              loading="lazy"
               class="img-fluid for-phone"
             />
           </div>
@@ -609,30 +871,32 @@
                   <span
                     ><img
                       src="assets/icons/index-form-icon-mail.svg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid"
                   /></span>
-                  mkt@siporabeverages.com
+                  <span class="form-element">mkt@siporabeverages.com</span>
                 </a>
                 <a href="#">
                   <span
                     ><img
                       src="assets/icons/index-form-icon-phone.svg"
-                      alt=""
+                      loading="lazy"
                       class="img-fluid"
                   /></span>
-                  +91 999 999 9999
+                  <span class="form-element">+91 999 999 9999</span>
                 </a>
               </div>
               <a href="#">
                 <span class="form-add-spaces"
                   ><img
                     src="assets/icons/index-form-icon-add.svg"
-                    alt=""
+                    loading="lazy"
                     class="img-fluid"
                 /></span>
-                66, Second Floor, Janpath, Connaught Place, New Delhi, Delhi
-                110001
+                <span class="form-element"
+                  >66, Second Floor, Janpath, Connaught Place, New Delhi, Delhi
+                  110001</span
+                >
               </a>
             </div>
           </div>
@@ -690,36 +954,43 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="footer-logo-container">
+            <div class="footer-n-logo">
+              <a href="index.html"
+                ><span
+                  ><img
+                    src="assets/icons/index-navbar-main-logo.svg"
+                    loading="lazy"
+                    class="img-fluid" /></span
+              ></a>
+            </div>
+            <!-- <div class="footer-logo-container">
               <div class="logo-ani-line-box">
                 <img
                   src="assets/vidoes/index-footer-logo-vid.gif"
-                  alt=""
+                  loading="lazy"
                   class="img-fluid footer-logo"
                 />
               </div>
               <div class="logo-ani-img-box">
                 <div class="col-md-6">
                   <div class="logo-two-img">
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="logo-two-img logo-two-img-2">
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
-                    <!-- <img src="assets/icons/index-thanda-shanda-icon-next.svg" alt="">
-                            <img src="assets/icons/index-thanda-shanda-icon-prev.svg" alt=""> -->
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-10">
             <div class="footer-nav-container">
               <div class="footer-nav-box">
                 <a href="index.html">Home</a>
-                <a href="#">About us</a>
+                <a href="index.html#about-us">About us</a>
                 <a href="#">Products</a>
                 <a href="#">Testimonials</a>
                 <a href="contact-us.html">Contact Us</a>
@@ -733,14 +1004,14 @@
       </div>
     </footer>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/jquery-3.7.1.min.js"></script>
+    <script defer src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/controller.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/controller.js"></script>
   </body>
 </html>

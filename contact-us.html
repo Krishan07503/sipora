@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icons/index-navbar-main-logo.svg"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -28,7 +33,7 @@
           <a class="navbar-brand" href="index.html"
             ><img
               src="assets/icons/index-navbar-main-logo.svg"
-              alt=""
+              loading="lazy"
               class="img-fluid main-logo"
           /></a>
           <button
@@ -51,13 +56,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Us</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html#about-us"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Thanda Shanda</a>
+                <a class="nav-link" href="index.html#thanda-shanda"
+                  >Thanda Shanda</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">D-Rage</a>
+                <a class="nav-link" href="index.html#d-rage">D-Rage</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -72,7 +84,7 @@
                 aria-controls="offcanvasExample"
                 ><img
                   src="assets/icons/index-navbar-icons-chat.svg"
-                  alt=""
+                  loading="lazy"
                   class="img-fluid chat-icon"
               /></a>
             </form>
@@ -130,48 +142,13 @@
                 placeholder="Mail"
               />
             </div>
-            <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder="Occasion"
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="custom-datetime">
-                <!-- <i class="fas fa-calendar-alt icon" onclick="openDateTimePicker()"></i>-->
-                <img
-                  src="assets/icons/index-book-ticket-calender-icon.svg"
-                  alt=""
-                  class="img-fluid icon"
-                  onclick="openDateTimePicker()"
-                />
-                <input
-                  type="datetime-local"
-                  class="form-control"
-                  id="customDatetime"
-                  placeholder="Date & Time"
-                />
-              </div>
 
-              <!-- <input type="datetime-local" class="form-control" id="inputEmail4" placeholder="Date & Time"> -->
-            </div>
             <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder="No. Of People"
-              />
-            </div>
-
-            <div class="col-12">
               <input
                 type="text"
                 class="form-control"
                 id="inputAddress"
-                placeholder="Drop a Message"
+                placeholder="Message"
               />
             </div>
 
@@ -206,10 +183,12 @@
         <div class="header-side-bar">
           <ul class="list-group header-slider-right">
             <li class="active">
-              <a href="">About Us</a>
+              <a href="index.html#about-us">About Us</a>
             </li>
-            <li><a href="">Thanda Shanda</a></li>
-            <li><a href="">D-Rage</a></li>
+            <li>
+              <a href="index.html#thanda_shanda">Thanda Shanda</a>
+            </li>
+            <li><a href="index.html#d_rage">D-Rage</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li>
               <a
@@ -255,7 +234,9 @@
                 <li>
                   <a href="#"
                     ><span
-                      ><img src="assets/icons/contact-us-icon-phone.svg" alt=""
+                      ><img
+                        src="assets/icons/contact-us-icon-phone.svg"
+                        loading="lazy"
                     /></span>
                     <p class="ms-0">+91 999 999 9999</p>
                   </a>
@@ -263,7 +244,9 @@
                 <li>
                   <a href="#"
                     ><span
-                      ><img src="assets/icons/contact-us-icon-mail.svg" alt=""
+                      ><img
+                        src="assets/icons/contact-us-icon-mail.svg"
+                        loading="lazy"
                     /></span>
                     <p>dummy@gmail.com</p>
                   </a>
@@ -271,7 +254,9 @@
                 <li>
                   <a href=""
                     ><span
-                      ><img src="assets/icons/contact-us-icon-add.svg" alt=""
+                      ><img
+                        src="assets/icons/contact-us-icon-add.svg"
+                        loading="lazy"
                     /></span>
                     <p class="ms-0">
                       66, Second Floor, Janpath, Connaught Place, New Delhi
@@ -285,7 +270,9 @@
                 <li>
                   <a href="#"
                     ><span
-                      ><img src="assets/icons/contact-us-icon-phone.svg" alt=""
+                      ><img
+                        src="assets/icons/contact-us-icon-phone.svg"
+                        loading="lazy"
                     /></span>
                     <p>+91 999 999 9999</p>
                   </a>
@@ -293,7 +280,9 @@
                 <li>
                   <a href="#"
                     ><span
-                      ><img src="assets/icons/contact-us-icon-mail.svg" alt=""
+                      ><img
+                        src="assets/icons/contact-us-icon-mail.svg"
+                        loading="lazy"
                     /></span>
                     <p>dummy@gmail.com</p>
                   </a>
@@ -341,7 +330,7 @@
                     type="text"
                     rows="5"
                     class="form-control"
-                    placeholder="Message"
+                    placeholder="Message*"
                     aria-label="Mobile No."
                     aria-describedby=""
                   ></textarea>
@@ -366,36 +355,43 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="footer-logo-container">
+            <div class="footer-n-logo">
+              <a href="index.html"
+                ><span
+                  ><img
+                    src="assets/icons/index-navbar-main-logo.svg"
+                    loading="lazy"
+                    class="img-fluid" /></span
+              ></a>
+            </div>
+            <!-- <div class="footer-logo-container">
               <div class="logo-ani-line-box">
                 <img
                   src="assets/vidoes/index-footer-logo-vid.gif"
-                  alt=""
+                  loading="lazy"
                   class="img-fluid footer-logo"
                 />
               </div>
               <div class="logo-ani-img-box">
                 <div class="col-md-6">
                   <div class="logo-two-img">
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="logo-two-img logo-two-img-2">
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
-                    <img src="assets/icons/index-navbar-main-logo.svg" alt="" />
-                    <!-- <img src="assets/icons/index-thanda-shanda-icon-next.svg" alt="">
-                              <img src="assets/icons/index-thanda-shanda-icon-prev.svg" alt=""> -->
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
+                    <img src="assets/icons/index-navbar-main-logo.svg" loading="lazy" />
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-10">
             <div class="footer-nav-container">
               <div class="footer-nav-box">
                 <a href="index.html">Home</a>
-                <a href="#">About us</a>
+                <a href="index.html#about-us">About us</a>
                 <a href="#">Products</a>
                 <a href="#">Testimonials</a>
                 <a href="contact-us.html">Contact Us</a>
@@ -409,14 +405,14 @@
       </div>
     </footer>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/jquery-3.7.1.min.js"></script>
+    <script defer src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/controller.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/controller.js"></script>
   </body>
 </html>

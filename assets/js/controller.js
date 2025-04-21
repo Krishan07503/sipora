@@ -9,6 +9,9 @@ $(".refresh-bg-img-slider.owl-carousel").owlCarousel({
   dots: true,
   animateIn: "fadeIn",
   animateOut: "fadeOut",
+  autoplayHoverPause: true,
+  mouseDrag: false,
+  touchDrag: false,
   responsive: {
     0: {
       items: 1,
@@ -31,15 +34,25 @@ $(".thanda-shanda-slider.owl-carousel").owlCarousel({
   dots: false,
   animateIn: "fadeIn",
   animateOut: "fadeOut",
+  autoplayHoverPause: true,
+  mouseDrag: false,
+  touchDrag: false,
   responsive: {
     0: {
       items: 1,
+      dots: true,
+      animateIn: false,
+      animateOut: false,
     },
     600: {
       items: 1,
+      animateIn: true,
+      animateOut: true,
     },
     1000: {
       items: 1,
+      animateIn: true,
+      animateOut: true,
     },
   },
 });
